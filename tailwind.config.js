@@ -3,17 +3,19 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'body': '#17171F',
-        'selected-text': '#A3A3FF',
-        'theme': '#3F3FFF',
-        'nav': '#404053',
-        'secondary': '#9191A4',
-        'badge': '#3F3F51',
-        'input-border': '#565666',
-        'input': '#2A2A35'
+        'body': '#FBFFFE',
+        'selected-text': '#FAA916',
+        'theme': '#FAA916',
+        'nav': '#2A282A',
+        'secondary': '#F9BD4E',
+        'badge': '#726D74',
+        'input-border': '#726D74',
+        'input': '#2A282A'
       },
       fontFamily: {
-        'poppins': ["'Poppins'", 'sans-serif']
+        'poppins': ["'Poppins'", 'sans-serif'],
+        'roboto': ["'Roboto'", 'sans-serif'],
+        'opensans': ["'Open Sans'", 'sans-serif']
       }
     },
   },

@@ -5,7 +5,7 @@ function updateList() {
 
 	document.querySelectorAll(".selected-circle").forEach(c => c.classList.remove("selected-circle"));
 	
-	document.querySelectorAll(".nav-dot")[[...document.querySelectorAll('h1, h2')].indexOf(titles[0])].classList.add("selected-circle");
+	document.querySelectorAll(".nav-dot")[[...document.querySelectorAll('h6')].indexOf(titles[0])].classList.add("selected-circle");
 }
 
 updateList();

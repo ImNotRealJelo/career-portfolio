@@ -21,14 +21,14 @@ html, body {
 }
 
 .secondary-title {
-    @apply text-3xl font-bold;
+    @apply text-5xl font-bold;
 }
-.secondary-title::before {
+.title-line::before {
     content: "";
     @apply block w-12 h-2 bg-theme rounded-full mb-1;
 }
 .section-paragraph {
-    @apply text-secondary my-6 w-full max-w-3xl;
+    @apply my-6 w-full max-w-3xl;
 }
 
 .badge {
@@ -46,6 +46,11 @@ scroll-margin-top: 100px;
     height: 80vh;
 }
 
+.nav-line::after {
+    content: "";
+    @apply block w-12 h-1 bg-theme rounded mb-1 transition;
+}
+
 .nav-dot {
     transition: background 200ms, border-color 200ms;
 }
@@ -54,4 +59,8 @@ scroll-margin-top: 100px;
 }
 .nav-dot:hover span {
     opacity: 1;
+}
+
+.dot {
+    @apply text-7xl text-secondary;
 }

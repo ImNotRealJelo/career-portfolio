@@ -3,138 +3,160 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Angelo</title>
+    <title>Jihlo</title>
     <link rel="stylesheet" href="public/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600;700&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
-<body class="bg-body text-white font-poppins pb-12">
+<body class="bg-body font-poppins pb-12 text-input">
     
     <!-- Header -->
     <header class="py-6">
-        <div class="container flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
-            <div class="text-lg font-bold">Angelo</div>
+        <div class="container flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full font-roboto text-sm tracking-widest">
+            <div class="text-xl font-opensans">Jihlo</div>
             <div class="hidden md:flex space-x-12 items-center">
                 <a href="#" class="text-selected-text">Home</a>
                 <a href="#about">About</a>
-                <a href="#projects">Projects</a>
-                <a href="#hire"><button class="px-6 py-2 bg-theme font-bold">Hire me</button></a>
+                <a href="#works">Works</a>
+                <a href="#contact">Contact</a>
             </div>
-            <div class="md:hidden">
-                <svg width="26" height="18" viewBox="0 0 26 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13 17.5H0.25V14.6667H13V17.5ZM25.75 10.4167H0.25V7.58333H25.75V10.4167ZM25.75 3.33333H13V0.5H25.75V3.33333Z" fill="white"/></svg>
+            <div class="md:hidden"> <!-- Menu Bar -->
+                <img src="assets/mode/menu.png" class="h-7">
             </div>
         </div>
     </header>
 
     <!-- Navigation -->
-    <div class="container mt-16 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+    <div class="container mt-0 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
         <div class="flex flex-wrap md:flex-nowrap">
-            <nav class="inline-block lg:mr-24 lg:w-4 fixed left-percentage hidden xl:block">
+            <nav class="inline-block lg:mr-24 lg:w-4 fixed left-percentage hidden xl:block mt-40 -ml-6">
                 <div class="absolute left-50 transform -translate-x-1/2 space-y-6 mt-36">
-                    <a href="#" class="nav-dot selected-circle block w-7 h-7 rounded-full border-4 border-nav bg-body">
-                        <span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">Home</span>
+                    <a href="#" class="nav-dot selected-circle block w-5 h-5 rounded-[3px] border-4 border-nav bg-body">
+                        <span class="bg-input text-white px-2 py-1 rounded-md ml-10 opacity-0 transition">Home</span>
                     </a>
-                    <a href="#about" class="nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body">
-                        <span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">About</span>
+                    <a href="#about" class="nav-dot block w-5 h-5 rounded-[3px] border-4 border-nav bg-body">
+                        <span class="bg-input text-white px-2 py-1 rounded-md ml-10 opacity-0 transition">About</span>
                     </a>
-                    <a href="#projects" class="nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body">
-                        <span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">Projects</span>
+                    <a href="#works" class="nav-dot block w-5 h-5 rounded-[3px] border-4 border-nav bg-body">
+                        <span class="bg-input text-white px-2 py-1 rounded-md ml-10 opacity-0 transition">Works</span>
                     </a>
-                    <a href="#hire" class="nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body">
-                        <span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">Contacts</span>
+					<a href="#contact" class="nav-dot block w-5 h-5 rounded-[3px] border-4 border-nav bg-body">
+                        <span class="bg-input text-white px-2 py-1 rounded-md ml-10 opacity-0 transition">Contact</span>
                     </a>
                 </div>
             </nav>
             <!-- Home Screen -->
-            <div class="flex flex-wrap lg:ml-20 justify-center md:justify-start max-w-xl mt-0 md:my-36">
-                <h1 class="font-bold text-5xl md:text-6xl lg:text-7xl text-center md:text-left">Building<br> beautiful web experiences.</h1>
-                <div class="w-full flex justify-center md:justify-start">
-                    <button class="px-12 py-4 bg-theme text-white font-bold mt-12 flex items-center space-x-3">
-                        <span>View my work.</span>
+            <div class="flex flex-wrap lg:ml-20 justify-center md:justify-start max-w-4xl mt-0 md:my-36">
+				<h3 class="font-opensans text-2xl md:text-2xl tracking-wide">Hi there, I am</h3>
+                <h6 class="font-bold text-4xl md:text-6xl lg:text-7xl text-center md:text-left -ml-40 md:-mt-5 text-theme"><br>John Angelo Alviar.</h6>
+                <h2 class="font-bold text-2xl md:text-4xl lg:text-4xl text-center md:text-left mt-3 text-secondary">A self-taught web developer.</h2>
+				<h4 class="font-opensans text-base md:text-xl max-w-lg mt-2 ml-3 md:ml-0">A senior high student and digital artist. I love building and designing elegant responsive web applications.</h4>
+				<div class="w-full flex md:justify-start">
+                    <button href="#works" class="mr-5 px-6 py-2 md:px-12 md:py-4 bg-input text-white font-bold mt-12 flex items-center space-x-3 hover:bg-theme transition ease-in-out delay-10">
+                        <span>VIEW MY WORK</span>
+                    </button>
+					<button href="#contact" class="px-6 py-2 md:px-12 md:py-4 bg-input text-white font-bold mt-12 flex items-center space-x-3 hover:bg-theme transition ease-in-out delay-10">
+                        <span>RESUME</span>
                     </button>
                 </div>
             </div>
-            <img src="img/man.png" alt="Man" class="w-3/4 mt-12 md:absolute -mt-6 md:mt-0 right-0 -z-1">
         </div>
     </div>
 
         <!-- About -->
-		<div class="container mt-64 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+		<div class="container mt-12 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
 			<section class="w-full">
-				<h2 id="about" class="secondary-title">My work</h2>
-				<p class="section-paragraph">I’ve had the pleasure of working with multiple Fortune 500 companies, designing and implementing both frontend and backend.</p>
-
+				<h6 id="about" class="secondary-title md:ml-4">About<span class="dot">.</span></h6>
+				<div class="py-8 px-8 max-w-6xl ml-24 md:ml-4 bg-body space-y-1 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6">
+					<img src="./assets/profile.jpg" class="-ml-8 grayscale hover:grayscale-0 transition delay-150 block mx-auto h-96 rounded sm:mx-0 sm:shrink-0ml-32 mt-7">
+					<div class="text-center space-y-2 sm:text-left">
+						<h1 class="font-poppins text-2xl -ml-16 md:text-4xl md:ml-16">John Angelo Alviar</h1>
+						<h2 class="font-roboto font-black text-base md:text-base -ml-16 md:ml-16 text-secondary">PHILOMATH</h2>
+						<p class="hidden md:flex font-roboto font-black text-base md:text-base ml-16">_</p>
+						<p class="hidden font-roboto text-base md:flex md:text-base ml-16 text-badge">Hello! I go by the name Jihlo. I am a motivated self-taught web developer whose hobbies include painting and reading. I’m also a senior highschool student and currently in the academic tract Science, Technology, Engineering and Mathematics (STEM) from The Nazarene Catholic School. My main focus these days are painting, graphic designing and learning unfamiliar technologies. Currently, I am only working on personal projects.</p>
+					</div>
+				</div>
+				<div>
+					<h1 class="text-3xl font-bold text-center mt-24">SKILLS</h1>
+					<p class="text-center mt-4 text-badge">Here are some technologies I use for building awesome applications.</p>
+					<div class="grid grid-cols-2 md:grid-cols-3 gap-2 items-center mt-8 -ml-8 md:ml-0">
+						<div class="px-4 py-2 rounded border-4 border-[#FAA916] flex items-center w-40 ml-28 md:ml-80">
+							<img src="assets/techs/html.png" alt="html5" class="h-10"><p class="font-roboto font-bold text-badge ml-2">HTML5</p>
+						</div>
+						<div class="px-4 py-2 rounded border-4 border-[#FAA916] flex items-center w-32 ml-8 md:ml-32">
+							<img src="assets/techs/css.png" alt="css" class="h-10"><p class="font-roboto font-bold text-badge ml-2">CSS3</p>
+						</div>
+						<div class="px-4 py-2 rounded border-4 border-[#FAA916] flex items-center w-44 ml-44 md:-ml-24">
+							<img src="assets/techs/javascript.png" alt="javascript" class="h-10"><p class="font-roboto font-bold text-badge ml-2">Javascript</p>
+						</div>
+						<div class="px-4 py-2 rounded border-4 border-[#FAA916] flex items-center w-36 md:ml-80 hidden md:flex">
+							<img src="assets/techs/nodejs.png" alt="nodejs" class="h-10"><p class="font-roboto font-bold text-badge ml-2">Node.js</p>
+						</div>
+						<div class="px-4 py-2 rounded border-4 border-[#FAA916] flex items-center w-36 md:ml-28 hidden md:flex">
+							<img src="assets/techs/python.png" alt="python" class="h-10"><p class="font-roboto font-bold text-badge ml-2">Python</p>
+						</div>
+						<div class="px-4 py-2 rounded border-4 border-[#FAA916] flex items-center w-48 md:-ml-24 hidden md:flex">
+							<img src="assets/techs/tailwind.png" alt="tailwind" class="h-10"><p class="font-roboto font-bold text-badge ml-2">Tailwind CSS</p>
+						</div>
+						<div class="px-4 py-2 rounded border-4 border-[#FAA916] flex items-center w-36 md:ml-96 hidden md:flex">
+							<img src="assets/techs/git.png" alt="git" class="h-10"><p class="font-roboto font-bold text-badge ml-2">Git</p>
+						</div>
+						<div class="px-4 py-2 rounded border-4 border-[#FAA916] flex items-center w-36 md:ml-44 hidden md:flex">
+							<img src="assets/techs/github.png" alt="github" class="h-10"><p class="font-roboto font-bold text-badge ml-2">Github</p>
+						</div>
+					</div>
+				</div>
 			</section>
 		</div>
 
 		<!-- Categorized Works -->
-		<div class="container mt-64 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+		<div class="container mt-44 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
 			<section class="w-full">
-				<h2 id="projects" class="secondary-title">My work</h2>
-				<p class="section-paragraph">I’ve had the pleasure of working with multiple Fortune 500 companies, designing and implementing both frontend and backend.</p>
+				<h6 id="works" class="secondary-title title-line">Recent Works<span class="dot">.</span></h6>
+				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-6 place-content-evenly">
+					<img src="assets/thumbnail/img1.png" class="h-36 lg:h-64 w-64 object-cover md:ml-36">
+					<img src="assets/thumbnail/img2.png" class="h-36 lg:h-64 w-64 object-cover md:ml-12">
+					<img src="assets/thumbnail/img3.png" class="h-36 lg:h-64 w-64 object-cover md:-ml-12">
+					<img src="assets/thumbnail/img4.png" class="h-36 lg:h-64 w-64 object-cover md:ml-36 hidden md:flex">
+					<img src="assets/thumbnail/img5.png" class="h-36 lg:h-64 w-64 object-cover md:ml-12 hidden md:flex">
+					<img src="assets/thumbnail/img6.png" class="h-36 lg:h-64 w-64 object-cover md:-ml-12 hidden md:flex">
+					<img src="assets/thumbnail/img7.png" class="h-36 lg:h-64 w-64 object-cover md:ml-36 hidden md:flex">
+					<img src="assets/thumbnail/img8.png" class="h-36 lg:h-64 w-64 object-cover md:ml-12 hidden md:flex">
+					<img src="assets/thumbnail/img9.png" class="h-36 lg:h-64 w-64 object-cover md:-ml-12 hidden md:flex">
+				</div>
+				<button class="px-6 py-2 md:px-12 md:py-4 bg-input text-white font-bold mt-12 flex items-center space-x-3 hover:bg-theme transition ease-in-out delay-10 md:ml-20">
+					<span href="#">Download My Porfolio</span>
+				</button>
+			</section>
+		</div>
 
-				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
-					<img src="https://images.unsplash.com/photo-1576153192396-180ecef2a715?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80" class="w-full bg-nav h-36 lg:h-72 object-cover">
-					<img src="https://images.unsplash.com/photo-1545235617-9465d2a55698?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80" class="w-full bg-nav h-36 lg:h-72 object-cover">
-					<img src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80" class="w-full hidden md:block bg-nav h-36 lg:h-72 object-cover">
-					<img src="https://images.unsplash.com/photo-1558655146-d09347e92766?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=764&q=80" class="w-full hidden md:block bg-nav h-36 lg:h-72 object-cover">
-					<img src="https://images.unsplash.com/photo-1547119957-637f8679db1e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80" class="w-full hidden md:block bg-nav h-36 lg:h-72 object-cover">
-					<img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1336&q=80" class="w-full hidden md:block bg-nav h-36 lg:h-72 object-cover">
-					<img src="https://images.unsplash.com/photo-1603969072881-b0fc7f3d77d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80s" class="w-full hidden md:block bg-nav h-36 lg:h-72 object-cover">
-					<img src="https://images.unsplash.com/photo-1618761714954-0b8cd0026356?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" class="w-full hidden md:block bg-nav h-36 lg:h-72 object-cover">
-					<img src="https://images.unsplash.com/photo-1545235617-7a424c1a60cc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=880&q=80" class="w-full hidden md:block md:col-span-2 lg:col-span-1 bg-nav h-36 lg:h-72 object-cover">
+		<!-- Contact -->
+		<div class="container mt-24 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+			<section class="w-full">
+				<h6 id="contact" class="secondary-title text-center mt-24">Contact Me<span class="dot">?</span></h6>
+				<p class="font-roboto text-badge text-center mt-8 text-lg  -ml-4">Whether it'd be a freelance opportunity or simply a message, <br>my inbox is always open. Send me a message and let's chat.</p>
+				<button onclick="location.href='mailto:alviarjohnangelo@gmail.com'" class="px-8 py-2 md:px-28 md:py-4 bg-input text-white font-bold mt-12 space-x-3 hover:bg-theme transition ease-in-out delay-10 md:ml-96">
+					<span>Get in touch</span>
+				</button>
+				<h1 class="text-3xl font-bold text-center mt-24">Credentials</h1>
+				<p class="text-center mt-4 text-badge">Here are some of my certifications, particularly in graphic and web design.</p>
+				<div class="max-w-4xl flex justify-center lg:ml-20 mt-4">
+					<a href=""><p class="px-4 py-2 border-4 border-input rounded w-64 text-sm mx-2 hover:border-theme hover:text-theme transition">TechnoKids 2018 Multimedia: Graphic Design Participant</p></a>
+					<a href=""><p class="px-4 py-2 border-4 border-input rounded w-64 text-sm mx-2 hover:border-theme hover:text-theme transition">TechnoKids 2019 Web Design and Programming Top 4</p></a>
+					<a href=""><p class="px-4 py-2 border-4 border-input rounded w-64 text-sm text-center mx-2 hover:border-theme hover:text-theme transition">Competent in Adobe Animate</p></a>
 				</div>
 			</section>
 		</div>
 
-		<!-- Hire me -->
-		<div class="container mt-64 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
-			<section class="w-full">
-				<h2 id="hire" class="secondary-title">Hire me</h2>
-				<p class="section-paragraph">Feel free to to contact me any time, through any method below.</p>
-
-				<div class="w-full grid lg:grid-cols-2 gap-8 lg:gap-32 mt-24">
-					<div class="space-y-12">
-						<div>
-							<label class="text-white block mb-6 text-xl font-bold">Name</label>
-							<input class="w-full border border-input-border bg-input px-4 py-4">
-						</div>
-						<div>
-							<label class="text-white block mb-6 text-xl font-bold">Email</label>
-							<input type="email" class="w-full border border-input-border bg-input px-4 py-4">
-						</div>
-						<div>
-							<label class="text-white block mb-6 text-xl font-bold">Message</label>
-							<textarea type="email" class="w-full border border-input-border bg-input px-4 py-4 h-56 resize-none"></textarea>
-						</div>
-						<button class="px-6 py-2 bg-theme text-white font-bold">Send it!</button>
-					</div>
-
-					<div class="mt-12">
-						<!-- Contact info -->
-						<p class="text-secondary">555-555-1234</p>
-						<a href="mailto:email@mydomain.com" class="text-secondary underline mt-3 block">email@mydomain.com</a>
-
-						<!-- Socials -->
-						<div class="flex mt-20 space-x-6">
-							<!-- Skype -->
-							<a href="#">
-								<svg class="w-8 h-8 lg:w-12 lg:h-12" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M43.1494 28.252C43.3496 27.1533 43.457 26.0303 43.457 24.9072C43.457 22.417 42.9688 20 42.0068 17.7295C41.0791 15.5322 39.7461 13.5596 38.0518 11.8652C36.3716 10.1808 34.3799 8.83914 32.1875 7.91504C29.9121 6.95313 27.5 6.46484 25.0098 6.46484C23.8379 6.46484 22.6611 6.57715 21.5186 6.79687C19.9376 5.9591 18.176 5.51995 16.3867 5.51758C13.4717 5.51758 10.7275 6.65527 8.66699 8.71582C7.65021 9.72738 6.84403 10.9305 6.29507 12.2555C5.74611 13.5806 5.46526 15.0013 5.46875 16.4355C5.46875 18.291 5.94727 20.1172 6.84082 21.7285C6.66016 22.7734 6.5625 23.8428 6.5625 24.9072C6.5625 27.3975 7.05078 29.8145 8.0127 32.085C8.94043 34.2822 10.2686 36.2549 11.9629 37.9492C13.6572 39.6436 15.6299 40.9717 17.8272 41.8994C20.1025 42.8613 22.5147 43.3496 25.0049 43.3496C26.0889 43.3496 27.1729 43.252 28.2373 43.0615C29.8731 43.9844 31.7188 44.4775 33.6084 44.4775C36.5234 44.4775 39.2676 43.3447 41.3281 41.2793C43.3936 39.2188 44.5264 36.4746 44.5264 33.5596C44.5313 31.7041 44.0527 29.873 43.1494 28.252ZM25.083 36.2061C18.5303 36.2061 15.6006 32.9834 15.6006 30.5713C15.6006 29.3311 16.5137 28.4668 17.7734 28.4668C20.5762 28.4668 19.8535 32.4951 25.083 32.4951C27.7637 32.4951 29.2432 31.04 29.2432 29.5508C29.2432 28.6572 28.8037 27.6611 27.0361 27.2266L21.2061 25.7715C16.5137 24.5947 15.6592 22.0557 15.6592 19.6729C15.6592 14.7217 20.3223 12.8613 24.7022 12.8613C28.7354 12.8613 33.4912 15.0928 33.4912 18.0615C33.4912 19.3359 32.3877 20.0732 31.1279 20.0732C28.7354 20.0732 29.1748 16.7627 24.3555 16.7627C21.9629 16.7627 20.6397 17.8467 20.6397 19.3945C20.6397 20.9424 22.5293 21.4355 24.1699 21.8115L28.4863 22.7686C33.2129 23.8232 34.4092 26.582 34.4092 29.1797C34.4092 33.1982 31.3184 36.2061 25.083 36.2061Z" fill="white"/></svg>
-							</a>
-							<!-- Twitter -->
-							<a href="#">
-								<svg class="w-8 h-8 lg:w-12 lg:h-12" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21 0C9.40313 0 0 9.40313 0 21C0 32.5969 9.40313 42 21 42C32.5969 42 42 32.5969 42 21C42 9.40313 32.5969 0 21 0ZM31.0922 15.8297C31.1062 16.05 31.1062 16.2797 31.1062 16.5047C31.1062 23.3859 25.8656 31.3125 16.2891 31.3125C13.3359 31.3125 10.5984 30.4547 8.29219 28.9781C8.71406 29.025 9.11719 29.0437 9.54844 29.0437C11.9859 29.0437 14.2266 28.2188 16.0125 26.8219C13.725 26.775 11.8031 25.275 11.1469 23.2125C11.9484 23.3297 12.6703 23.3297 13.4953 23.1188C12.3175 22.8795 11.2588 22.2398 10.4991 21.3084C9.73949 20.377 9.32572 19.2113 9.32812 18.0094V17.9437C10.0172 18.3328 10.8281 18.5719 11.6766 18.6047C10.9633 18.1293 10.3784 17.4854 9.97365 16.7298C9.5689 15.9743 9.35683 15.1306 9.35625 14.2734C9.35625 13.3031 9.60938 12.4172 10.0641 11.6484C11.3714 13.2578 13.0028 14.5741 14.8522 15.5117C16.7016 16.4493 18.7275 16.9873 20.7984 17.0906C20.0625 13.5516 22.7063 10.6875 25.8844 10.6875C27.3844 10.6875 28.7344 11.3156 29.6859 12.3281C30.8625 12.1078 31.9875 11.6672 32.9906 11.0766C32.6016 12.2812 31.7859 13.2984 30.7031 13.9406C31.7531 13.8281 32.7656 13.5375 33.7031 13.1297C32.9953 14.1703 32.1094 15.0938 31.0922 15.8297Z" fill="white"/></svg>								
-							</a>
-						</div>
-					</div>
-					
-				</div>
-
-			</section>
+		<div class="flex justify-center mt-16">
+			<a href=""><img src="assets/socmed/facebook.png" alt="" class="h-8 mx-2 hover:-translate-y-3 transition"></a>
+			<a href=""><img src="assets/socmed/ig.png" alt="" class="h-8 mx-2 hover:-translate-y-3 transition"></a>
+			<a href=""><img src="assets/socmed/github.png" alt="" class="h-8 mx-2 hover:-translate-y-3 transition"></a>
+			<a href=""><img src="assets/socmed/linkedin.png" alt="" class="h-8 mx-2 hover:-translate-y-3 transition"></a>
 		</div>
+		<p class="text-center mt-4 text-sm hover:text-theme transition"><a href="">©2022 John Angelo Alviar. All rights reserved.</a></p>
 
         <script src="main.js"></script>
-
 </body>
 </html>
