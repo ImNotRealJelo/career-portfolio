@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -184,4 +185,192 @@ scroll-margin-top: 100px;
 
 #toggle:checked ~ label div.toggle-dot {
     @apply translate-x-3;
+=======
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+    scroll-behavior: smooth;
+}
+
+.left-50 {
+    left: 50%;
+}
+.right-50 {
+    right: 50%;
+}
+.top-50 {
+    top: 50%;
+}
+
+.-z-1 {
+    z-index: -1;
+}
+
+.secondary-title {
+    @apply text-5xl font-bold;
+}
+.title-line::before {
+    content: "";
+    @apply block w-12 h-2 bg-theme rounded-full mb-1;
+}
+.section-paragraph {
+    @apply my-6 w-full max-w-3xl;
+}
+
+.badge {
+    @apply px-4 py-2 text-sm rounded bg-badge;
+}
+
+[id] {
+scroll-margin-top: 100px;
+}
+
+.left-percentage {
+    left: 5%;
+}
+.h-screen-partial {
+    height: 80vh;
+}
+
+.nav-dot {
+    transition: background 200ms, border-color 200ms;
+}
+.selected-circle {
+    @apply border-theme bg-theme;
+}
+.nav-dot:hover span {
+    opacity: 1;
+}
+
+.dot {
+    @apply text-7xl text-secondary;
+}
+
+.slider{
+  width: 800px;
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-left: 13.5%;
+}
+
+.slides{
+  width: 500%;
+  height: 500px;
+  display: flex;
+}
+
+.slides input{
+  display: none;
+}
+
+.slide{
+  width: 20%;
+  transition: 1.5s;
+}
+
+.slide img{
+  width: 500px;
+  height: 500px;
+}
+
+/*css for manual slide navigation*/
+
+.navigation-manual{
+  position: absolute;
+  width: 800px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn{
+  border: 2px solid #FAA916;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+  margin-right: 40px;
+}
+
+.manual-btn:hover{
+  background: #FAA916;
+}
+
+#radio1:checked ~ .first{
+  margin-right: 0%;
+}
+
+#radio2:checked ~ .first{
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+  margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+  margin-left: -60%;
+}
+
+#radio5:checked ~ .first{
+    margin-left: -80%;
+}
+
+#radio6:checked ~ .first{
+    margin-left: -100%;
+}
+
+/*css for automatic navigation*/
+
+.navigation-auto{
+  position: absolute;
+  display: flex;
+  width: 800px;
+  justify-content: center;
+  margin-top: 460px;
+}
+
+.navigation-auto div{
+  border: 2px solid #FAA916;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+  margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background: #FAA916;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+  background: #FAA916;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+  background: #FAA916;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+  background: #FAA916;
+}
+#radio5:checked ~ .navigation-auto .auto-btn5{
+    background: #FAA916;
+}
+#radio6:checked ~ .navigation-auto .auto-btn6{
+    background: #FAA916;
+}
+
+.dport {
+    margin-left: 37.5%;
+}
+
+#toggle:checked ~ label div.toggle-dot {
+    @apply translate-x-3;
+>>>>>>> 81e257ee1457a82916e8883d8f44a236eb709e53
 }
