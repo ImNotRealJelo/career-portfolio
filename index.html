@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jihlo</title>
+    <title>Immersion Journal</title>
     <link rel="stylesheet" href="public/style.css">
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,12 +15,13 @@
     <!-- Header -->
     <header class="py-6">
         <div class="container flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full font-roboto text-sm tracking-widest">
-            <div class="text-xl font-opensans dark:text-body">Jihlo</div>
+            <div class="text-xl font-opensans dark:text-body">Journal</div>
             <div class="hidden md:flex space-x-12 items-center">
                 <a href="#" class="text-selected-text nav-line">Home</a>
-                <a href="#about" class="hover:text-theme transition dark:text-body">About</a>
-                <a href="#works" class="hover:text-theme transition dark:text-body">Works</a>
-                <a href="#contact" class="hover:text-theme transition dark:text-body">Contact</a>
+                <a href="#expect" class="hover:text-theme transition dark:text-body">Expectations</a>
+                <a href="#encounter" class="hover:text-theme transition dark:text-body">Encountered</a>
+                <a href="#learn" class="hover:text-theme transition dark:text-body">Learnings</a>
+				<a href="#realize" class="hover:text-theme transition dark:text-body">Realization</a>
 				<audio id="sound1" src="assets/click.mp3" preload="auto"></audio>
 				<input type="checkbox" name="" id="toggle" class="hidden" />
 				<label for="toggle">
@@ -43,14 +44,17 @@
                     <a href="#" class="nav-dot selected-circle block w-5 h-5 rounded-[3px] border-4 border-nav bg-body dark:bg-dark dark:border-theme">
                         <span class="bg-input text-white px-2 py-1 rounded-md ml-10 opacity-0 transition">Home</span>
                     </a>
-                    <a href="#about" class="nav-dot block w-5 h-5 rounded-[3px] border-4 border-nav bg-body dark:bg-dark dark:border-theme">
-                        <span class="bg-input text-white px-2 py-1 rounded-md ml-10 opacity-0 transition">About</span>
+                    <a href="#expect" class="nav-dot block w-5 h-5 rounded-[3px] border-4 border-nav bg-body dark:bg-dark dark:border-theme">
+                        <span class="bg-input text-white px-2 py-1 rounded-md ml-10 opacity-0 transition">Expectations</span>
                     </a>
-                    <a href="#works" class="nav-dot block w-5 h-5 rounded-[3px] border-4 border-nav bg-body dark:bg-dark dark:border-theme">
-                        <span class="bg-input text-white px-2 py-1 rounded-md ml-10 opacity-0 transition">Works</span>
+                    <a href="#encounter" class="nav-dot block w-5 h-5 rounded-[3px] border-4 border-nav bg-body dark:bg-dark dark:border-theme">
+                        <span class="bg-input text-white px-2 py-1 rounded-md ml-10 opacity-0 transition">Encountered</span>
                     </a>
-					<a href="#contact" class="nav-dot block w-5 h-5 rounded-[3px] border-4 border-nav bg-bod dark:bg-dark dark:border-theme">
-                        <span class="bg-input text-white px-2 py-1 rounded-md ml-10 opacity-0 transition">Contact</span>
+					<a href="#learn" class="nav-dot block w-5 h-5 rounded-[3px] border-4 border-nav bg-bod dark:bg-dark dark:border-theme">
+                        <span class="bg-input text-white px-2 py-1 rounded-md ml-10 opacity-0 transition">Learnings</span>
+                    </a>
+					<a href="#realize" class="nav-dot block w-5 h-5 rounded-[3px] border-4 border-nav bg-bod dark:bg-dark dark:border-theme">
+                        <span class="bg-input text-white px-2 py-1 rounded-md ml-10 opacity-0 transition">Realization</span>
                     </a>
                 </div>
             </nav>
@@ -58,62 +62,59 @@
             <div class="flex flex-wrap lg:ml-20 justify-center md:justify-start max-w-4xl mt-0 md:my-36">
 				<h3 class="font-opensans text-2xl md:text-2xl tracking-wide dark:text-secondary">Hi there, I am</h3>
                 <h6 class="font-bold text-4xl md:text-6xl lg:text-7xl text-center md:text-left -ml-40 md:-mt-5 text-theme dark:text-body" data-aos="fade-in"><br>John Angelo Alviar.</h6>
-                <h2 class="font-bold text-2xl md:text-4xl lg:text-4xl text-center md:text-left mt-3 text-secondary dark:text-badge" data-aos="fade-left">A self-taught web developer.</h2>
-				<h4 class="font-opensans text-base md:text-xl max-w-lg mt-2 ml-3 md:ml-0 dark:text-body">A senior high student and digital artist. I love building and designing elegant responsive web applications.</h4>
+                <h2 class="font-bold text-2xl md:text-4xl lg:text-4xl text-center md:text-left mt-3 text-secondary dark:text-badge" data-aos="fade-left">An Immersion Journal.</h2>
+				<h4 class="font-opensans text-base md:text-xl max-w-lg mt-2 ml-3 md:ml-0 dark:text-body">My Journey through the Work Immersion in the External Immersion Batch 2 Section C of Information Technology of PHINMA Education.</h4>
 				<div class="w-full flex md:justify-start">
-                    <button onclick="location.href='#works'" class="mr-5 px-6 py-2 md:px-12 md:py-4 bg-input dark:bg-body dark:text-input text-white font-bold mt-12 flex items-center space-x-3 hover:bg-theme transition ease-in-out delay-10 hover:dark:bg-theme">
-                        <span>VIEW MY WORK</span>
-                    </button>
-					<button onclick="location.href='https://drive.google.com/file/d/1Eyhxc1TiI_K-eZSJLMBocoqRXkz-kY3N/view?usp=sharing'" class="px-6 py-2 md:px-12 md:py-4 bg-input dark:bg-body dark:text-input text-white font-bold mt-12 flex items-center space-x-3 hover:bg-theme transition ease-in-out delay-10 hover:dark:bg-theme">
-                        <span>RESUME</span>
+                    <button onclick="location.href='https://jihlo.netlify.app'" target="_blank" class="mr-5 px-6 py-2 md:px-12 md:py-4 bg-input dark:bg-body dark:text-input text-white font-bold mt-6 flex items-center space-x-3 hover:bg-theme transition ease-in-out delay-10 hover:dark:bg-theme">
+                        <span>FINAL PROJECT IN IMMERSION</span>
                     </button>
                 </div>
-				<a href="https://www.facebook.com/alviarjohnangelo/" target="_blank" class="hidden absolute md:block animate-bounce left-16 top-64 p-5 max-w-sm mx-auto bg-[#F9BD4E] rounded-full shadow-lg flex hover:p-6 hover:-translate-x-3 hover:-translate-y-3 transition ease-in-out duration-150 dark:bg-input"><img src="assets/mode/facebook2.png" class="h-10"></a>
-				<a href="https://www.linkedin.com/in/john-angelo-alviar-43431a231/" target="_blank" class="hidden absolute md:block animate-bounce right-96 top-32 p-5 max-w-sm mx-auto bg-[#F9BD4E] rounded-full shadow-lg flex hover:p-6 hover:translate-x-3 hover:-translate-y-3 transition ease-in-out duration-150 dark:bg-input"><img src="assets/mode/linkedin2.png" class="h-10"></a>
-				<a href="https://github.com/ImNotRealJelo" target="_blank" class="hidden absolute md:block animate-bounce right-64 top-96 p-5 max-w-sm mx-auto bg-[#F9BD4E] rounded-full shadow-lg flex hover:p-6 hover:translate-x-3 hover:-translate-y-3 transition ease-in-out duration-150 dark:bg-input"><img src="assets/mode/github2.png" class="h-10"></a>
+				<a href="https://www.facebook.com/alviarjohnangelo/" target="_blank" class="hidden absolute md:block animate-bounce left-16 top-64 p-5 max-w-sm mx-auto bg-[#7EE081] rounded-full shadow-lg flex hover:p-6 hover:-translate-x-3 hover:-translate-y-3 transition ease-in-out duration-150 dark:bg-input"><img src="assets/mode/facebook2.png" class="h-10"></a>
+				<a href="https://www.linkedin.com/in/john-angelo-alviar-43431a231/" target="_blank" class="hidden absolute md:block animate-bounce right-96 top-32 p-5 max-w-sm mx-auto bg-[#7EE081] rounded-full shadow-lg flex hover:p-6 hover:translate-x-3 hover:-translate-y-3 transition ease-in-out duration-150 dark:bg-input"><img src="assets/mode/linkedin2.png" class="h-10"></a>
+				<a href="https://github.com/ImNotRealJelo" target="_blank" class="hidden absolute md:block animate-bounce right-64 top-96 p-5 max-w-sm mx-auto bg-[#7EE081] rounded-full shadow-lg flex hover:p-6 hover:translate-x-3 hover:-translate-y-3 transition ease-in-out duration-150 dark:bg-input"><img src="assets/mode/github2.png" class="h-10"></a>
             </div>
         </div>
     </div>
 
-        <!-- About -->
+        <!-- Expectations -->
 		<div class="container mt-12 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
 			<section class="w-full">
-				<h6 id="about" class="secondary-title md:ml-4 dark:text-body" data-aos="fade-in">About<span class="dot">.</span></h6>
+				<h6 id="expect" class="secondary-title md:ml-4 dark:text-body" data-aos="fade-in">Expectations<span class="dot">.</span></h6>
+				<img src="assets/phinma_banner.png" class="mt-6">
 				<div class="py-8 px-8 max-w-6xl ml-24 md:ml-4 bg-body dark:bg-input space-y-1 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6">
-					<img src="./assets/profile.jpg" class="-ml-8 grayscale hover:grayscale-0 transition delay-150 block mx-auto h-96 rounded sm:mx-0 sm:shrink-0ml-32 mt-7">
 					<div class="text-center space-y-2 sm:text-left">
-						<h1 class="font-poppins text-2xl -ml-16 md:text-4xl md:ml-16 dark:text-body" data-aos="fade-left">John Angelo Alviar</h1>
-						<h2 class="font-roboto font-black text-base md:text-base -ml-16 md:ml-16 text-secondary" data-aos="fade-right">PHILOMATH</h2>
+						<h1 class="font-poppins text-2xl -ml-16 md:text-4xl md:ml-16 dark:text-body mt-6" data-aos="fade-left">Future Computer Engineer</h1>
+						<h2 class="font-roboto font-black text-base md:text-base -ml-16 md:ml-16 text-secondary" data-aos="fade-right">In Progress...</h2>
 						<p class="hidden md:flex font-roboto font-black text-base md:text-base ml-16">_</p>
-						<p class="hidden font-roboto text-base md:flex md:text-base ml-16 text-badge dark:text-body" data-aos="fade-up">Hello! I go by the name Jihlo. I am a motivated self-taught web developer whose hobbies include painting and reading. I’m also a senior highschool student and currently in the academic tract Science, Technology, Engineering and Mathematics (STEM) from The Nazarene Catholic School. My main focus these days are painting, graphic designing and learning unfamiliar technologies. Currently, I am only working on personal projects.</p>
+						<p class="hidden font-roboto text-base md:flex md:text-base ml-16 text-badge dark:text-body" data-aos="fade-up">One of my expecations for the work immersion was, this was the start I needed to further my dream of becoming a computer engineer. It would help me answer certain questions about the work related to the technology field. I expected to be in a professional scenario, wherein we will actually work as interns. Another thing I was expecting was that we would be able to learn a lot about the different jobs the information technology can produce. As well as tips and tricks by the immersion supervisor, things we should take into account if we are going to apply for a job in the technological world.</p>
 					</div>
 				</div>
 				<div>
 					<h1 class="text-3xl font-bold text-center mt-24 dark:text-theme" data-aos="fade-in">SKILLS</h1>
-					<p class="text-center mt-4 text-badge dark:text-body" data-aos="fade-in">Here are some technologies I use for building awesome applications.</p>
+					<p class="text-center mt-4 text-badge dark:text-body" data-aos="fade-in">Other Expectations include improving my ability in terms of coding, which are currently:</p>
 					<div class="grid grid-cols-2 md:grid-cols-3 gap-2 items-center mt-8 -ml-8 md:ml-0">
-						<div data-aos="fade-right" class="px-4 py-2 rounded border-4 border-[#FAA916] dark:border-body flex items-center w-40 ml-16 md:ml-80">
+						<div data-aos="fade-right" class="px-4 py-2 rounded border-4 border-[#7EE081] dark:border-body flex items-center w-40 ml-16 md:ml-80">
 							<img src="assets/techs/html.png" alt="html5" class="h-10"><p class="font-roboto font-bold text-badge ml-2 dark:text-body">HTML5</p>
 						</div>
-						<div data-aos="fade-up" class="px-4 py-2 rounded border-4 border-[#FAA916] dark:border-body flex items-center w-32 ml-8 md:ml-32">
+						<div data-aos="fade-up" class="px-4 py-2 rounded border-4 border-[#7EE081] dark:border-body flex items-center w-32 ml-8 md:ml-32">
 							<img src="assets/techs/css.png" alt="css" class="h-10"><p class="font-roboto font-bold text-badge ml-2 dark:text-body">CSS3</p>
 						</div>
-						<div data-aos="fade-left" class="px-4 py-2 rounded border-4 border-[#FAA916] dark:border-body flex items-center w-44 ml-32 md:-ml-24">
+						<div data-aos="fade-left" class="px-4 py-2 rounded border-4 border-[#7EE081] dark:border-body flex items-center w-44 ml-32 md:-ml-24">
 							<img src="assets/techs/javascript.png" alt="javascript" class="h-10"><p class="font-roboto font-bold text-badge ml-2 dark:text-body">Javascript</p>
 						</div>
-						<div data-aos="fade-right" class="px-4 py-2 rounded border-4 border-[#FAA916] dark:border-body flex items-center w-36 md:ml-80 hidden md:flex">
+						<div data-aos="fade-right" class="px-4 py-2 rounded border-4 border-[#7EE081] dark:border-body flex items-center w-36 md:ml-80 hidden md:flex">
 							<img src="assets/techs/nodejs.png" alt="nodejs" class="h-10"><p class="font-roboto font-bold text-badge ml-2 dark:text-body">Node.js</p>
 						</div>
-						<div data-aos="fade-up" class="px-4 py-2 rounded border-4 border-[#FAA916] dark:border-body flex items-center w-36 md:ml-28 hidden md:flex">
+						<div data-aos="fade-up" class="px-4 py-2 rounded border-4 border-[#7EE081] dark:border-body flex items-center w-36 md:ml-28 hidden md:flex">
 							<img src="assets/techs/python.png" alt="python" class="h-10"><p class="font-roboto font-bold text-badge ml-2 dark:text-body">Python</p>
 						</div>
-						<div data-aos="fade-left" class="px-4 py-2 rounded border-4 border-[#FAA916] dark:border-body flex items-center w-48 md:-ml-24 hidden md:flex">
+						<div data-aos="fade-left" class="px-4 py-2 rounded border-4 border-[#7EE081] dark:border-body flex items-center w-48 md:-ml-24 hidden md:flex">
 							<img src="assets/techs/tailwind.png" alt="tailwind" class="h-10"><p class="font-roboto font-bold text-badge ml-2 dark:text-body">Tailwind CSS</p>
 						</div>
-						<div data-aos="fade-right" class="px-4 py-2 rounded border-4 border-[#FAA916] dark:border-body flex items-center w-36 md:ml-96 hidden md:flex">
+						<div data-aos="fade-right" class="px-4 py-2 rounded border-4 border-[#7EE081] dark:border-body flex items-center w-36 md:ml-96 hidden md:flex">
 							<img src="assets/techs/git.png" alt="git" class="h-10"><p class="font-roboto font-bold text-badge ml-2 dark:text-body">Git</p>
 						</div>
-						<div data-aos="fade-left" class="px-4 py-2 rounded border-4 border-[#FAA916] dark:border-body flex items-center w-36 md:ml-44 hidden md:flex">
+						<div data-aos="fade-left" class="px-4 py-2 rounded border-4 border-[#7EE081] dark:border-body flex items-center w-36 md:ml-44 hidden md:flex">
 							<img src="assets/techs/github.png" alt="github" class="h-10"><p class="font-roboto font-bold text-badge ml-2 dark:text-body">Github</p>
 						</div>
 					</div>
@@ -121,85 +122,81 @@
 			</section>
 		</div>
 
-		<!-- Categorized Works -->
+		<!-- Encountered -->
 		<div class="container mt-44 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
 			<section class="w-full">
-				<h6 id="works" class="secondary-title title-line dark:text-body">Recent Works<span class="dot">.</span></h6>
-				<div class="slider mt-12 hidden md:block" data-aos="fade-up">
-					<div class="slides">
-					  <input type="radio" name="radio-btn" id="radio1">
-					  <input type="radio" name="radio-btn" id="radio2">
-					  <input type="radio" name="radio-btn" id="radio3">
-					  <input type="radio" name="radio-btn" id="radio4">
-					  <input type="radio" name="radio-btn" id="radio5">
-					  <input type="radio" name="radio-btn" id="radio6">
-					  <div class="slide first mr-40">
-						<img src="assets/thumbnail/img1.png" alt="">
-					  </div>
-					  <div class="slide">
-						<img src="assets/thumbnail/img2.png" alt="">
-					  </div>
-					  <div class="slide">
-						<img src="assets/thumbnail/img3.png" alt="">
-					  </div>
-					  <div class="slide">
-						<img src="assets/thumbnail/img4.png" alt="">
-					  </div>
-					  <div class="slide">
-						<img src="assets/thumbnail/img5.png" alt="">
-					  </div>
-					  <div class="slide">
-						<img src="assets/thumbnail/img6.png" alt="">
-					  </div>
-					  <div class="navigation-auto">
-						<div class="auto-btn1"></div>
-						<div class="auto-btn2"></div>
-						<div class="auto-btn3"></div>
-						<div class="auto-btn4"></div>
-						<div class="auto-btn5"></div>
-						<div class="auto-btn6"></div>
-					  </div>
-					</div>
-					<div class="navigation-manual">
-					  <label for="radio1" class="manual-btn dark:border-body dark:hover:bg-body"></label>
-					  <label for="radio2" class="manual-btn dark:border-body dark:hover:bg-body"></label>
-					  <label for="radio3" class="manual-btn dark:border-body dark:hover:bg-body"></label>
-					  <label for="radio4" class="manual-btn dark:border-body dark:hover:bg-body"></label>
-					  <label for="radio5" class="manual-btn dark:border-body dark:hover:bg-body"></label>
-					  <label for="radio6" class="manual-btn dark:border-body dark:hover:bg-body"></label>
+				<h6 id="encounter" class="secondary-title title-line dark:text-body">People Encountered<span class="dot">.</span></h6>
+				<div class="py-8 px-8 max-w-6xl ml-24 md:ml-4 bg-body dark:bg-input space-y-1 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6">
+					<div class="text-center space-y-2 sm:text-left">
+						<h2 class="font-roboto font-black text-base md:text-xl text-secondary" data-aos="fade-right">Immersion Supervisor: <span>Miss Jennifer Valerio</span></h2>
+						<p class="hidden font-roboto text-base md:flex md:text-base text-badge dark:text-body" data-aos="fade-up"> I've met a ton of people from the different schools in Batch 2 of the External Immersion. (Justice Cecilia Muñoz Palma Senior High School, Holy Trinity Academy, Don Alejandro Roces Sr. Science-Technology High School, New Era High School, and ofcourse, The Nazarene Catholic School). Apart from the students, I've also met the people handling the immersion apart from our imemrsion adviser as well as Ms. Audrey Roxette Pedrosa. I'm thankful for this work immersion as I've had the opportunity to make new friends during the time of the immersion. I've also seen the glimpse of what kind of people the future of the IT field has to offer.</p>
+						<div class="flex justify-center items-center h-screen">
+							<img src="assets/people.png" class="h-96 -mt-56" data-aos="fade-right">
+							<p class="hidden font-roboto text-base md:flex md:text-base -mt-56 ml-6 text-badge dark:text-body" data-aos="fade-left"> I was informed that other immersion departments use Google Meet as there place to learn, while we use Zoom for our meetings. We have three sections because the department had too much students to handle. But, even if we have different sections we all join the same zoom immersion. So, I met every student aspiring to pursue a course in the IT field. Our immersion supervisor didn't require us to open our cameras and focused more on our paticipation during her lectures. So, naturally we seldomly view the other students' faces.</p>
+						</div>
 					</div>
 				</div>
-				<button data-aos="fade-up" onclick="location.href='https://drive.google.com/file/d/1v6wHVx2d6fvabc1ADBJX7vqKPz7PlQbV/view?usp=sharing'" target="_blank" class="dport px-6 py-2 md:px-12 md:py-4 bg-input text-white font-bold mt-12 flex items-center space-x-3 hover:bg-theme transition ease-in-out delay-10 dark:bg-body dark:text-input dark:hover:bg-theme">
-					<span>Download My Porfolio</span>
-				</button>
 			</section>
 		</div>
 
-		<!-- Contact -->
+		<!-- Learnings -->
+		<div class="container mt-44 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full -mt-12">
+			<section class="w-full">
+				<h6 id="learn" class="secondary-title title-line dark:text-body" data-aos="fade-right">Learnings<span class="dot">.</span></h6>
+				<div class="py-8 px-8 max-w-6xl ml-24 md:ml-4 bg-body dark:bg-input space-y-1 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6">
+					<div class="text-center space-y-2 sm:text-left">
+						<p class="hidden font-roboto text-base md:flex md:text-base text-badge dark:text-body" data-aos="fade-up"> There were tons of webinar sessions with our immersion supervisor. Apart from the questions we ask from time to time during synchronous sessions, there was snippets of her tips as a professional working in the IT Field. She gave us great tips during our time with her. She even showed to us different intern opportunities, events and webinars outside of the immersion and other opportunities we couldn't miss as an aspiring IT.</p>
+					</div>
+				</div>
+				<div class="hidden max-w-4xl md:flex justify-center lg:ml-20 mt-4">
+					<a data-aos="fade-right" href="https://docs.google.com/spreadsheets/d/1RWmpDfiflZTtwbwl0c1ffFZMtHO8xzKB0aJL8d9EJmc/edit?usp=sharing" target="_blank"><p class="px-2 py-2 border-4 border-input rounded w-64 text-sm mx-1 hover:border-theme hover:text-theme transition dark:text-body">Daily Time Record (DTR)</p></a>
+					<a data-aos="fade-up" href="assets/file/web1.pdf" target="_blank"><p class="px-4 py-2 border-4 border-input rounded w-64 text-sm mx-2 hover:border-theme hover:text-theme transition dark:text-body">Webinar 1: CAREER PORTFOLIO</p></a>
+					<a data-aos="fade-left" href="assets/file/web2.pdf" target="_blank"><p class="px-4 py-2 border-4 border-input rounded w-64 text-sm text-center mx-2 hover:border-theme hover:text-theme transition dark:text-body">Webinar 2: TOP 10 ESSENTIAL SKILLS AND COMPETENCIES</p></a>
+				</div>
+				<div class="hidden max-w-4xl md:flex justify-center lg:ml-20 mt-4">
+					<a data-aos="fade-right" href="assets/file/web3.pdf" target="_blank"><p class="px-4 py-2 -mt-6 border-4 border-input rounded w-64 text-sm mx-2 hover:border-theme hover:text-theme transition dark:text-body">Webinar 3: IT JOBS</p></a>
+					<a data-aos="fade-up" href="assets/file/web4.pdf" target="_blank"><p class="px-4 py-2 -mt-6 border-4 border-input rounded w-64 text-sm mx-2 hover:border-theme hover:text-theme transition dark:text-body">Webinar 4: IN THE NOW: WORK AFTER PANDEMIC</p></a>
+					<a data-aos="fade-left" href="assets/file/web5.pdf" target="_blank"><p class="px-4 py-2 border-4 border-input rounded w-64 text-sm text-center mx-2 hover:border-theme hover:text-theme transition dark:text-body">Webinar 5:ROAD MAP, VISION BOARD, AND VALUE PROPOSITION</p></a>
+				</div>
+				<div class="hidden max-w-4xl md:flex justify-center lg:ml-20 mt-4">
+					<a data-aos="fade-right" href="assets/file/web6.pdf" target="_blank"><p class="px-4 py-2 -mt-16 border-4 border-input rounded w-64 text-sm mx-2 hover:border-theme hover:text-theme transition dark:text-body">Webinar 6: HOW TO: PROFESSIONAL NETWORK</p></a>
+					<a data-aos="fade-up" href="assets/file/web7.pdf" target="_blank"><p class="px-4 py-2 -mt-12 border-4 border-input rounded w-64 text-sm mx-2 hover:border-theme hover:text-theme transition dark:text-body">Webinar 7: PRE-EMPLOYMENT ESSENTIALS</p></a>
+					<a data-aos="fade-left" href="assets/file/web8.pdf" target="_blank"><p class="px-4 py-2 -mt-1 border-4 border-input rounded w-64 text-sm text-center mx-2 hover:border-theme hover:text-theme transition dark:text-body">Webinar 8: ELEVATOR PITCH</p></a>
+				</div>
+				<div class="hidden max-w-4xl md:flex justify-center lg:ml-20 mt-4">
+					<a data-aos="fade-right" href="assets/file/web9.pdf" target="_blank"><p class="px-4 py-2 -mt-10 border-4 border-input rounded w-64 text-sm mx-2 hover:border-theme hover:text-theme transition dark:text-body">Webinar 9: EMPLOYMENT DOCUMENTS</p></a>
+					<a data-aos="fade-up" href="assets/file/web10.pdf" target="_blank"><p class="px-4 py-2 -mt-8 border-4 border-input rounded w-64 text-sm mx-2 hover:border-theme hover:text-theme transition dark:text-body">Webinar 10: PITCH/PRESENTATION VIDEOS AND TIPS</p></a>
+					<a data-aos="fade-left" href="assets/file/web11.pdf" target="_blank"><p class="px-4 py-2 border-4 border-input rounded w-64 text-sm text-center mx-2 hover:border-theme hover:text-theme transition dark:text-body">Webinar 11: WORKPLACE 101</p></a>
+				</div>
+			</section>
+		</div>
+
+		<!-- Realizations -->
 		<div class="container mt-24 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
 			<section class="w-full">
-				<h6 id="contact" class="secondary-title text-center mt-24 dark:text-body">Contact Me<span class="dot">?</span></h6>
-				<p class="font-roboto text-badge text-center mt-8 text-lg -ml-4 dark:text-body">Whether it'd be a freelance opportunity or simply a message, <br>my inbox is always open. Send me a message and let's chat.</p>
-				<button data-aos="fade-up" onclick="location.href='mailto:alviarjohnangelo@gmail.com'" class="px-8 py-2 md:px-28 md:py-4 bg-input text-white font-bold mt-12 space-x-3 hover:bg-theme transition ease-in-out delay-10 md:ml-96 dark:bg-body dark:text-input dark:hover:bg-theme">
-					<span>Get in touch</span>
-				</button>
-				<h1 class="text-3xl font-bold text-center mt-24 hidden md:block dark:text-body">Credentials</h1>
-				<p class="text-center mt-4 text-badge hidden md:block">Here are some of my certifications, particularly in graphic and web design.</p>
-				<div class="hidden max-w-4xl md:flex justify-center lg:ml-20 mt-4">
-					<a data-aos="fade-right" href="https://drive.google.com/file/d/1GC22HfeojE3bmz4qbOwlrsxjDyxIls5s/view?usp=sharing" target="_blank"><p class="px-4 py-2 border-4 border-input rounded w-64 text-sm mx-2 hover:border-theme hover:text-theme transition dark:text-body">TechnoKids 2018 Multimedia: Graphic Design Participant</p></a>
-					<a data-aos="fade-up" href="https://drive.google.com/file/d/1yjfaAwB23ODsWIslBqfPJEE0Rp5m2Ejd/view?usp=sharing" target="_blank"><p class="px-4 py-2 border-4 border-input rounded w-64 text-sm mx-2 hover:border-theme hover:text-theme transition dark:text-body">TechnoKids 2019 Web Design and Programming Top 4</p></a>
-					<a data-aos="fade-left" href="https://drive.google.com/file/d/1CN9Viwn7pYnDw6NxOb_FWVck7jM-DKEH/view?usp=sharing" target="_blank"><p class="px-4 py-2 border-4 border-input rounded w-64 text-sm text-center mx-2 hover:border-theme hover:text-theme transition dark:text-body">Competent in Adobe Animate</p></a>
+				<h6 id="realize" class="secondary-title text-center mt-24 dark:text-body">Realizations<span class="dot">.</span></h6>
+				<p class="font-roboto text-badge text-center mt-8 text-lg -ml-4 dark:text-body">As the immersion had finished, I've realized a lot of stuff. It gave me both fear and courage to start working.<br>It hit me in the head, work isn't that easy, it's something that I should take seriously, otherwise, I would be <br> swallowed by it. So I must ready myself both physically and mentally before working. Other realizations include:</p>
+				<div class="grid grid-cols-2 md:grid-cols-3 gap-2 items-center mt-8 -ml-8 md:ml-0">
+					<div data-aos="fade-right" class="px-3 py-2 w-56 rounded border-4 border-[#7EE081] dark:border-body flex items-center ml-16 md:ml-36">
+						<p class="dark:text-body">The expecations I had before the work immersion had been fulfilled.</p>
+					</div>
+					<div data-aos="fade-up" class="px-4 py-2 w-64 rounded border-4 border-[#7EE081] dark:border-body flex items-center ml-8 md:ml-4">
+						<p class="dark:text-body">I've found a new motivation to pursue the computer engineering course.</p>
+					</div>
+					<div data-aos="fade-left" class="px-4 py-2 w-64 rounded border-4 border-[#7EE081] dark:border-body flex items-center ml-32 md:-ml-20 md:-mt-6">
+						<p class="dark:text-body">The job I want to pursue has tons of obstacles that I'd need to face.</p>
+					</div>
+					<div data-aos="fade-right" class="px-3 py-2 w-72 rounded border-4 border-[#7EE081] dark:border-body flex items-center ml-16 md:ml-64">
+						<p class="dark:text-body">Life isn't always fair, I have to be brave and never give up in chasing my dream.</p>
+					</div>
+					<div data-aos="fade-left" class="px-4 py-2 w-64 rounded border-4 border-[#7EE081] dark:border-body flex items-center ml-32 md:ml-48">
+						<p class="dark:text-body">The information technology field is flexible in terms of job choices.</p>
+					</div>
 				</div>
 			</section>
 		</div>
 
-		<div class="flex justify-center mt-24">
-			<a href="https://www.facebook.com/alviarjohnangelo/" target="_blank"><img src="assets/socmed/facebook.png" alt="" class="h-8 mx-2 hover:-translate-y-3 transition dark:grayscale dark:hover:grayscale-0"></a>
-			<a href="https://www.instagram.com/jih_lo/" target="_blank"><img src="assets/socmed/ig.png" alt="" class="h-8 mx-2 hover:-translate-y-3 transition dark:grayscale dark:hover:grayscale-0"></a>
-			<a href="https://github.com/ImNotRealJelo" target="_blank"><img src="assets/socmed/github.png" alt="" class="h-8 mx-2 hover:-translate-y-3 transition dark:grayscale dark:hover:grayscale-0"></a>
-			<a href="https://www.linkedin.com/in/john-angelo-alviar-43431a231/" target="_blank"><img src="assets/socmed/linkedin.png" alt="" class="h-8 mx-2 hover:-translate-y-3 transition dark:grayscale dark:hover:grayscale-0"></a>
-		</div>
-		<p class="text-center mt-4 text-sm hover:text-theme transition dark:text-body dark:hover:text-theme"><a href="https://github.com/ImNotRealJelo/career-portfolio" target="_blank">©2022 John Angelo Alviar. All rights reserved.</a></p>
+		<p class="text-center mt-24 text-sm hover:text-theme transition dark:text-body dark:hover:text-theme"><a href="https://github.com/ImNotRealJelo/career-portfolio" target="_blank">©2022 John Angelo Alviar. All rights reserved.</a></p>
 
         <script src="main.js"></script>
 		<script>
